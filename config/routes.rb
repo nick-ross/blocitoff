@@ -1,4 +1,24 @@
 Blocitoff::Application.routes.draw do
+  get "todos/index"
+
+  get "todos/new"
+
+  get "todos/show"
+
+  get "todos/edit"
+
+  get "todos/destroy"
+
+  get "lists/index"
+
+  get "lists/new"
+
+  get "lists/edit"
+
+  get "lists/show"
+
+  get "lists/destroy"
+
   get "welcome/index"
 
   get "welcome/about"

@@ -1,27 +1,13 @@
 Blocitoff::Application.routes.draw do
-  get "todos/index"
+  devise_for :users
 
-  get "todos/new"
-
-  get "todos/show"
-
-  get "todos/edit"
-
-  get "todos/destroy"
-
-  get "lists/index"
-
-  get "lists/new"
-
-  get "lists/edit"
-
-  get "lists/show"
-
-  get "lists/destroy"
-
-  get "welcome/index"
+  resources :todos
 
   get "welcome/about"
+
+  authenticated :user do
+    root to: 'todos#index'
+  end
 
   root to: 'welcome#index'
 

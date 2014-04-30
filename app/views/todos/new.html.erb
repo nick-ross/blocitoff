@@ -1,2 +1,19 @@
-<h1>Todos#new</h1>
-<p>Find me in app/views/todos/new.html.erb</p>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+    <h3>Add a new item to your list.</h3>
+      <%= form_for @todo, html: { class: 'form-horizontal' }  do |f| %>
+        <div class="span6">
+          <div class="well well-lg">
+            <br>
+            <div><%= f.label :title %><%= f.text_field :title, autofocus: true %>
+            <%= f.hidden_field :completed, value: false %></div><br>
+            <div><%= f.submit "Add to list", class: 'btn btn-primary' %></div>
+            <br>
+            <br>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

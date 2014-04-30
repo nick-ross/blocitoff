@@ -1,0 +1,35 @@
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Open Sans';
+}
+
+p, a {
+  font-family: 'Open Sans';
+}
+.btn {
+  font-family: 'Open Sans';
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+.user-info {
+  margin-top: 9px;
+}
+
+input#todo_title {
+  width: 300px;
+}
+
+div.well.well-lg  {
+  padding: 40px;
+  margin: 60px 0px 160px 0px;
+}
+
+.panel-body.todo {
+  border: solid 1px #ddd;
+}

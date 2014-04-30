@@ -2,7 +2,7 @@ Blocitoff::Application.routes.draw do
   devise_for :users
 
   resources :todos
-
+  resources :users, only: [:show]
   get "welcome/about"
 
   authenticated :user do

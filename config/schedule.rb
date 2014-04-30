@@ -20,6 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 set :output, "/log/cron.log"
 
-every 1.day, :at => '3:30 pm' do
+every 5.minutes do
   rake "delete_todos:task"
 end

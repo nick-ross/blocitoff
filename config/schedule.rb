@@ -20,7 +20,7 @@
 # Learn more: http://github.com/javan/whenever
 set :output, "/blocitoff/log/cron.log"
 
-every :minute do
+every 1.minute do
   rake "delete_todos:task"
 end
 

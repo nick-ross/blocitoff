@@ -18,10 +18,12 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-set :output, "/blocitoff/log/cron.log"
+set :output, "~/code/blocitoff/log/cron.log"
+
+set :environment, "development"
 
 every 1.minute do
-  rake "delete_todos:task"
+  rake "delete_todos"
 end
 
 # every :day, :at => '12:00am' do

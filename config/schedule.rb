@@ -21,10 +21,10 @@
 set :output, "~/code/blocitoff/log/cron.log"
 
 
-every 1.minute do
-  rake "delete_todos"
-end
+#  every 1.minute do
+#    rake "delete_todos"
+#  end
 
-# every :day, :at => '12:00am' do
-#   rake "delete_todos:task"
-# end
+every :day, :at => '12:30am' do
+  rake "delete_todos"
+end

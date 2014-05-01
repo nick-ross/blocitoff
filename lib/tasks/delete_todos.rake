@@ -1,3 +1,3 @@
 task delete_todos: :environment do
-    Todo.where("created_at <= ?", Time.now - 2.minutes).destroy_all
+    Todo.where("created_at <= ?", Time.now - 7.days).destroy_all
 end

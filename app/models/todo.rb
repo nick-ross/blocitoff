@@ -3,6 +3,6 @@ class Todo < ActiveRecord::Base
   attr_accessible :completed, :title
 
   def days_left
-    distance_of_time_in_words(@user.created_at)
+    7 - ((Time.now - self.created_at).to_i / 1.day) 
   end
 end

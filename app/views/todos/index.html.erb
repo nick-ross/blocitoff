@@ -15,8 +15,7 @@
                 <% @todos.each do |todo| %>
                   <tr>
                     <td><%= todo.title %></td>
-                    <% daysLeft = 7 - ((Time.now - todo.created_at).to_i / 1.day) %>
-                    <td><%= "#{daysLeft}" %></td>
+                    <td><%= todo.days_left %></td>
                     <td><%= link_to "Done", todo_path(todo), method: :delete, data: { confirm: "Are you sure?" }, class: 'text-warning' %></td>
                   </tr>
                  <% end %>

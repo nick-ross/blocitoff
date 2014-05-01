@@ -20,7 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 set :output, "~/code/blocitoff/log/cron.log"
 
-set :environment, "development"
 
 every 1.minute do
   rake "delete_todos"

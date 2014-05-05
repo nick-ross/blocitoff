@@ -6,11 +6,11 @@ class TodosController < ApplicationController
     end
 
     def new
-      @todo = Todo.new   
+      @todo = Todo.new
     end
 
     def show
-      @todo = Todo.find(params[:id])    
+      @todo = Todo.find(params[:id])
     end
 
     def create
@@ -25,7 +25,7 @@ class TodosController < ApplicationController
 
     def edit
       @todo = Todo.find(params[:id])
-      
+
       if @todo.update_attribute(:completed, true)
         flash[:notice] = "Item."
         redirect_to todo_index_path, :notice => "Item marked as completed."
@@ -40,11 +40,4 @@ class TodosController < ApplicationController
 
       redirect_to root_path :notice => "Item deleted."
     end
-
-  private
-
-    def todo_params
-      params.require(:todo).permit(:title, :completed)
-    end
-
 end

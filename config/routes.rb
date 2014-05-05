@@ -1,7 +1,7 @@
 Blocitoff::Application.routes.draw do
   devise_for :users
 
-  resources :todos
+  resources :todos, except: [:update]
   resources :users, only: [:show]
   get "welcome/about"
 

@@ -8,7 +8,7 @@ group :production do
   gem 'pg'
 end
 
-group :development do 
+group :development do
   gem 'sqlite3'
 end
 
@@ -28,7 +28,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'whenever', :require => false
-
+gem 'figaro'
+gem 'rails_best_practices'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

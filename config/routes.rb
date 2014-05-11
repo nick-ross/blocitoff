@@ -12,6 +12,11 @@ Blocitoff::Application.routes.draw do
   root to: 'welcome#index'
 
 
+  namespace :api, defaults: {format: 'json'} do 
+    resources :users
+    resources :todos
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

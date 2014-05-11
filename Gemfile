@@ -30,6 +30,7 @@ gem 'font-awesome-sass'
 gem 'whenever', :require => false
 gem 'figaro'
 gem 'rails_best_practices'
+gem 'active_model_serializers'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

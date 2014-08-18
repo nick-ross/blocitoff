@@ -1,6 +1,5 @@
 blocitoff
-
-========
+=========
 
 Blocitoff is a self-destructing Todo list application built with Ruby on Rails.
 
